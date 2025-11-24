@@ -1419,6 +1419,369 @@ body.rjwtf-page .page {
   line-height: 1.8;
 }
 
+/* ---------------- RJWTF Skills Section ---------------- */
+
+.rjwtf-skills {
+  margin-top: 120px;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.skills-header h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 16px 0 12px;
+}
+
+.skills-header p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(12, 4, 26, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  animation: fade-in-up 0.6s ease-out backwards;
+}
+
+.skill-card:nth-child(1) { animation-delay: 0.1s; }
+.skill-card:nth-child(2) { animation-delay: 0.2s; }
+.skill-card:nth-child(3) { animation-delay: 0.3s; }
+.skill-card:nth-child(4) { animation-delay: 0.4s; }
+.skill-card:nth-child(5) { animation-delay: 0.5s; }
+.skill-card:nth-child(6) { animation-delay: 0.6s; }
+
+.skill-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(152, 87, 211, 0.3);
+  border-color: rgba(152, 87, 211, 0.4);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.skill-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-card h3 {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.skill-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  opacity: 0.85;
+}
+
+.skill-level {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #9857d3, #6ec1f4);
+  border-radius: 999px;
+  transition: width 0.8s ease;
+  box-shadow: 0 0 12px rgba(152, 87, 211, 0.6);
+}
+
+/* ---------------- RJWTF Fun Facts Section ---------------- */
+
+.rjwtf-fun-facts {
+  margin-top: 120px;
+}
+
+.fun-facts-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.fun-facts-header h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 16px 0;
+}
+
+.fun-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.fact-card {
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(8, 2, 18, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  animation: fade-in-up 0.6s ease-out backwards;
+}
+
+.fact-card:nth-child(1) { animation-delay: 0.1s; }
+.fact-card:nth-child(2) { animation-delay: 0.2s; }
+.fact-card:nth-child(3) { animation-delay: 0.3s; }
+.fact-card:nth-child(4) { animation-delay: 0.4s; }
+.fact-card:nth-child(5) { animation-delay: 0.5s; }
+.fact-card:nth-child(6) { animation-delay: 0.6s; }
+
+.fact-card:hover {
+  transform: translateY(-4px) rotate(1deg);
+  border-color: rgba(110, 193, 244, 0.4);
+  box-shadow: 0 20px 50px rgba(110, 193, 244, 0.2);
+}
+
+.fact-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.fact-card h3 {
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.fact-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* ---------------- RJWTF Software Knowledge Section ---------------- */
+
+.rjwtf-software {
+  margin-top: 120px;
+  position: relative;
+}
+
+.software-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.software-header h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 16px 0 12px;
+}
+
+.software-header p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.software-category {
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(12, 4, 26, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.software-category h3 {
+  font-size: 22px;
+  margin: 0 0 16px;
+  color: #6ec1f4;
+}
+
+.software-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.software-category li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.software-category li:last-child {
+  border-bottom: none;
+}
+
+.software-category li::before {
+  content: '▸';
+  color: #9857d3;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.software-visual {
+  position: relative;
+  min-height: 200px;
+  border-radius: 24px;
+  background: rgba(5, 0, 12, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  padding: 32px;
+}
+
+.code-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 16px;
+  font-family: 'Space Mono', monospace;
+}
+
+.code-matrix span {
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: rgba(152, 87, 211, 0.15);
+  border: 1px solid rgba(152, 87, 211, 0.3);
+  text-align: center;
+  font-size: 14px;
+  color: #6ec1f4;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.code-matrix span:nth-child(2n) {
+  animation-delay: 0.5s;
+}
+
+.code-matrix span:nth-child(3n) {
+  animation-delay: 1s;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    box-shadow: 0 0 8px rgba(152, 87, 211, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 16px rgba(152, 87, 211, 0.6);
+  }
+}
+
+/* ---------------- RJWTF Coding Views Section ---------------- */
+
+.rjwtf-coding-views {
+  margin-top: 120px;
+}
+
+.coding-views-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.coding-views-header h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 16px 0;
+}
+
+.coding-views-content {
+  display: grid;
+  gap: 32px;
+}
+
+.view-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(8, 2, 18, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.view-visual {
+  min-height: 200px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-visual.code-1 {
+  background: linear-gradient(135deg, rgba(152, 87, 211, 0.3), rgba(110, 193, 244, 0.3));
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.03) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.03) 4px);
+}
+
+.view-visual.code-2 {
+  background: linear-gradient(135deg, rgba(255, 215, 134, 0.3), rgba(152, 87, 211, 0.3));
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 215, 134, 0.4), transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(152, 87, 211, 0.4), transparent 50%);
+}
+
+.view-visual.code-3 {
+  background: linear-gradient(135deg, rgba(110, 193, 244, 0.3), rgba(122, 211, 166, 0.3));
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.05) 10px, rgba(255, 255, 255, 0.05) 20px);
+}
+
+.view-visual.code-4 {
+  background: linear-gradient(135deg, rgba(122, 211, 166, 0.3), rgba(110, 193, 244, 0.3));
+  background-image: 
+    linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%),
+    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%);
+}
+
+.view-copy h3 {
+  font-size: 24px;
+  margin: 0 0 12px;
+  color: #6ec1f4;
+}
+
+.view-copy p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.9;
+}
+
 @media (max-width: 1100px) {
   .hero {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
